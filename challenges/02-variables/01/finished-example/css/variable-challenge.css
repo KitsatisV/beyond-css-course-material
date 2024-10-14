@@ -7,12 +7,12 @@ body {
   font-size: 1.75rem;
   font-family: system-ui, sans-serif;
   line-height: 1.6;
-  background: #f8f7f7;
-  color: #201e1f;
   /* this is being used to center the content on the screen */
   display: grid;
   height: 100vh;
   place-items: center;
+  background: #f8f7f7;
+  color: #201e1f;
 }
 
 .card {
@@ -21,7 +21,6 @@ body {
   width: min(90%, 60rem);
   padding: 2em;
   box-shadow: 0 0 2rem #201e1f;
-  border-radius: 0.5rem;
 }
 .card__title {
   color: #da3f0b;
@@ -31,23 +30,26 @@ body {
   display: inline-block;
   padding: 0.5em 1.5em;
   text-decoration: none;
-  border: #da3f0b solid 3px;
-  border-radius: 0.5rem;
+  border: 3px solid #da3f0b;
+  border-radius: 0.25em;
 }
 .btn--primary {
   background: #da3f0b;
   color: #f8f7f7;
 }
 .btn--outline {
+  background: #f8f7f7;
   color: #da3f0b;
 }
 .btn:hover, .btn:focus {
-  background: #201e1f;
   color: #f8f7f7;
+  background: #201e1f;
   box-shadow: 0 0 1rem #da3f0b;
 }
 
 .flex-group {
   display: flex;
   gap: 1rem;
-}/*# sourceMappingURL=variable-challenge.css.map */
+}
+
+/*# sourceMappingURL=variable-challenge.css.map */

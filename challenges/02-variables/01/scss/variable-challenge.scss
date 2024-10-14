@@ -1,3 +1,8 @@
+$clr-neutral-100: #f8f7f7;
+$clr-neutral-900: #201e1f;
+$clr-primary-400: #da3f0b;
+$border-radius: 0.25em;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,6 +17,9 @@ body {
   display: grid;
   height: 100vh;
   place-items: center;
+
+  background: $clr-neutral-100;
+  color: $clr-neutral-900;
 }
 
 .card {
@@ -19,12 +27,37 @@ body {
   gap: 0.75em;
   width: min(90%, 60rem);
   padding: 2em;
+
+  box-shadow: 0 0 2rem $clr-neutral-900;
+
+  &__title {
+    color: $clr-primary-400;
+  }
 }
 
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
   text-decoration: none;
+  border: 3px solid $clr-primary-400;
+  border-radius: $border-radius;
+
+  &--primary {
+    background: $clr-primary-400;
+    color: $clr-neutral-100;
+  }
+
+  &--outline {
+    background: $clr-neutral-100;
+    color: $clr-primary-400;
+  }
+
+  &:hover,
+  &:focus {
+    color: $clr-neutral-100;
+    background: $clr-neutral-900;
+    box-shadow: 0 0 1rem $clr-primary-400;
+  }
 }
 
 .flex-group {

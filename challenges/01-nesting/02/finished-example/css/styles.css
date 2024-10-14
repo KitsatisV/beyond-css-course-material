@@ -8,31 +8,29 @@ body {
 .btn {
   display: inline-block;
   padding: 1em 2em;
+  color: white;
   cursor: pointer;
   border: 0;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
 }
 .btn__primary {
-  background: #3f637d;
+  background: hsl(206, 33%, 37%);
 }
-.btn__primary:hover,
-.btn__primary:focus {
-  background: #2b4355;
+.btn__primary:hover, .btn__primary:focus {
+  background: hsl(206, 33%, 25%);
 }
 .btn__secondary {
-  background: #4c4171;
+  background: hsl(253, 27%, 35%);
 }
-.btn__secondary:hover,
-.btn__secondary:focus {
-  background: #2b2541;
+.btn__secondary:hover, .btn__secondary:focus {
+  background: hsl(253, 27%, 20%);
 }
 .btn__accent {
-  background: #efca5d;
-  color: black;
+  background: hsl(45, 82%, 65%);
 }
-.btn__accent:hover,
-.btn__accent:focus {
-  background: #d1a215;
+.btn__accent:hover, .btn__accent:focus {
+  background: hsl(45, 82%, 45%);
 }
+
+/*# sourceMappingURL=styles.css.map */

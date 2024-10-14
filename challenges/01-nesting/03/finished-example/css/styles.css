@@ -15,17 +15,17 @@ section {
 }
 
 .surface-primary {
-  background: #3f637d;
+  background: hsl(206, 33%, 37%);
   color: white;
 }
 
 .surface-secondary {
-  background: #4c4171;
+  background: hsl(253, 27%, 35%);
   color: white;
 }
 
 .surface-accent {
-  background: #efca5d;
+  background: hsl(45, 82%, 65%);
   color: black;
 }
 
@@ -37,8 +37,7 @@ section {
   text-decoration: none;
   text-transform: uppercase;
 }
-.surface-primary .btn,
-.surface-secondary .btn {
+.surface-primary .btn, .surface-secondary .btn {
   background: white;
   color: black;
 }
@@ -46,8 +45,7 @@ section {
   color: white;
   background: black;
 }
-.btn:hover,
-.btn:focus {
+.btn:hover, .btn:focus {
   background: inherit;
   color: inherit;
   outline: currentColor 2px solid;
@@ -65,3 +63,5 @@ section {
 .surface-accent .text-subdued {
   opacity: 0.6;
 }
+
+/*# sourceMappingURL=styles.css.map */

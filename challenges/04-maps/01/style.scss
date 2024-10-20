@@ -1,4 +1,5 @@
 @use "sass:map";
+@use 'sass:math';
 
 $breakpoints: (
   small: 30em,
@@ -8,6 +9,25 @@ $breakpoints: (
 );
 
 @mixin mq($size) {
+  @if map.has-key($breakpoints, $size) {
+    $breakpoint: map.get($breakpoints, $size);
+
+    @media screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
+
+  @else if (type-of($size)==number and not unitless($size)) {
+    @media screen and (min-width: #{$size}) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Please provide a valid breakpoint name or a valid number with a unit.";
+  }
+
+
   $breakpoint: map.get($breakpoints, $size);
 
   @media screen and (min-width: $breakpoint) {
@@ -16,13 +36,16 @@ $breakpoints: (
 }
 
 body {
+
   // all of these should work
   @include mq(medium) {
     background: pink;
   }
+
   @include mq(500px) {
     background: lightblue;
   }
+
   @include mq(100em) {
     background: #efefef;
   }
@@ -31,6 +54,7 @@ body {
   @include mq(reallysmall) {
     background: yellow;
   }
+
   @include mq(5000) {
     background: purple;
   }

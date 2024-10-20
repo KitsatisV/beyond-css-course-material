@@ -1,0 +1,17 @@
+/* Error: "Please provide a valid breakpoint name or a valid number with a unit."
+ *    ,
+ * 54 |   @include mq(reallysmall) {
+ *    |   ^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   style.scss 54:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: "Please provide a valid breakpoint name or a valid number with a unit."\a    \2577 \a 54 \2502    @include mq(reallysmall) {\d\a    \2502    ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   style.scss 54:3  root stylesheet';
+}
